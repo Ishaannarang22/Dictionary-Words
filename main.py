@@ -1,7 +1,7 @@
 import requests
 
 
-def hacks(a):
+def hack(a):
     url = f'https://owlbot.info/api/v4/dictionary/{a}'
     headers = {"Authorization": "Token b6794ca8f0d8e36338c2fadb62cf54c8dc51069f"}
     r = requests.get(url, headers=headers)
@@ -19,4 +19,4 @@ def hacks(a):
 
 
 while True:
-    hacks(input('Word: '))
+    hack(input('Word: '))
