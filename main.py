@@ -7,10 +7,14 @@ def hacks(a):
     r = requests.get(url, headers=headers)
     with open('CoolWords.txt', 'a') as f:
         data = r.json()
-        for item in data['definitions']:
-            definition = item['definition']
-            f.write(f'\n{a} = {definition}\n')
-            print(f"{a} = {definition}\n")
+        try:
+            for item in data['definitions']:
+                definition = item['definition']
+                f.write(f'\n{a} = {definition}\n')
+                print(f"{a} = {definition}\n")
+        except:
+            f.write(f'\n{a} = No meaning found\n')
+            print(f"{a} = No meaning found\n")
     f.close()
 
 
