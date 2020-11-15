@@ -5,4 +5,4 @@ A Python Program that solves the problem of saving your vocabulary words through
 1) Download the code onto your Windows/Mac computer <br>
 2) Run the following command in your terminal. <br>
 3) You will get the definition of your word into the terminal whilst simultaniously saving it.<br>
-4) The saved words will me found in <strong><u>CoolWords.txt</u></strong> <br>
+4) The saved words can be found in <strong><u>CoolWords.txt</u></strong> <br>
