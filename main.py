@@ -10,13 +10,14 @@ def hacks(a):
         try:
             for item in data['definitions']:
                 definition = item['definition']
+                eg = item['example']
                 f.write(f'\n{a} = {definition}\n')
-                print(f"{a} = {definition}\n")
+                #print(f"{a} = {definition}\n")
         except:
             f.write(f'\n{a} = No meaning found\n')
-            print(f"{a} = No meaning found\n")
+            #print(f"{a} = No meaning found\n")
     f.close()
-
+    print(data['definitions'])
 
 while True:
     hacks(input('Word: '))
